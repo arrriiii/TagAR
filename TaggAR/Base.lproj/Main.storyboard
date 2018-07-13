@@ -46,6 +46,7 @@
                     </view>
                     <connections>
                         <outlet property="arView" destination="w0n-x2-ces" id="Ofw-K0-8oc"/>
+                        <outlet property="draw" destination="OAt-NO-9bn" id="b2F-ee-dxg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
