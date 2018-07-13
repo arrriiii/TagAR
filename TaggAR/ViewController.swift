@@ -43,11 +43,14 @@ class ViewController: UIViewController, ARSCNViewDelegate {
                 sphereNode.geometry?.firstMaterial?.diffuse.contents = UIColor.red
                 print("draw button is being pressed")
             } else {
-                let pointer = SCNNode(geometry: SCNSphere(radius: 0.01))
+//                let pointer = SCNNode(geometry: SCNBox(width: 0.1, height: 0.1, length: 0.1, chamferRadius: 0.1/2))
+                let pointer = SCNNode(geometry: SCNPlane(width: 0.1, height: 0.1))
                 pointer.position = currentPositionOfCamera
 
                 self.arView.scene.rootNode.enumerateChildNodes({ (node, _) in
-                    node.removeFromParentNode()
+                    if node.geometry is SCNPlane {
+                        node.removeFromParentNode()
+                    }
                 })
                 
                 self.arView.scene.rootNode.addChildNode(pointer)
