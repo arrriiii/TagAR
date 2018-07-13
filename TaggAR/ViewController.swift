@@ -1,10 +1,8 @@
 //
 //  ViewController.swift
 //  TaggAR
-//
-//  Created by Ari Herman on 7/12/18.
 //  Copyright © 2018 Ari Herman. All rights reserved.
-//
+
 
 import UIKit
 import ARKit
