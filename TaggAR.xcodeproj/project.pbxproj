@@ -15,6 +15,7 @@
 		EDDE1CC520F82D4A00A135E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDDE1CC320F82D4A00A135E8 /* LaunchScreen.storyboard */; };
 		EDDE1CD020F82D4A00A135E8 /* TaggARTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDE1CCF20F82D4A00A135E8 /* TaggARTests.swift */; };
 		EDDE1CDB20F82D4A00A135E8 /* TaggARUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDE1CDA20F82D4A00A135E8 /* TaggARUITests.swift */; };
+		EDDE1CE920F84E9A00A135E8 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDDE1CE820F84E9A00A135E8 /* Home.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		EDDE1CD620F82D4A00A135E8 /* TaggARUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaggARUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDDE1CDA20F82D4A00A135E8 /* TaggARUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaggARUITests.swift; sourceTree = "<group>"; };
 		EDDE1CDC20F82D4A00A135E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDDE1CE820F84E9A00A135E8 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				EDDE1CC320F82D4A00A135E8 /* LaunchScreen.storyboard */,
 				EDDE1CC620F82D4A00A135E8 /* Info.plist */,
 				EDDE1CBE20F82D4900A135E8 /* TaggAR.xcdatamodeld */,
+				EDDE1CE820F84E9A00A135E8 /* Home.storyboard */,
 			);
 			path = TaggAR;
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 				EDDE1CC520F82D4A00A135E8 /* LaunchScreen.storyboard in Resources */,
 				EDDE1CC220F82D4A00A135E8 /* Assets.xcassets in Resources */,
 				EDDE1CBD20F82D4900A135E8 /* Main.storyboard in Resources */,
+				EDDE1CE920F84E9A00A135E8 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
