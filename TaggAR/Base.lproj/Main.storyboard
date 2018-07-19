@@ -27,14 +27,13 @@
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OAt-NO-9bn">
-                                <rect key="frame" x="160" y="554" width="55" height="55"/>
-                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OAt-NO-9bn">
+                                <rect key="frame" x="160.5" y="554" width="55" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="IaL-ZQ-kcu"/>
                                     <constraint firstAttribute="width" constant="55" id="m70-52-Spf"/>
                                 </constraints>
-                                <state key="normal" title="Draw">
+                                <state key="normal" image="drawButton">
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
@@ -112,10 +111,13 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button hidden="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ex7-Pe-sl1">
-                                <rect key="frame" x="313" y="64" width="30" height="27"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <state key="normal" title="X">
+                            <button hidden="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ex7-Pe-sl1">
+                                <rect key="frame" x="293" y="64" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="FaY-Gy-ztd"/>
+                                    <constraint firstAttribute="width" constant="50" id="xlr-ai-fQF"/>
+                                </constraints>
+                                <state key="normal" image="resetButton">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
@@ -156,4 +158,8 @@
             <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="drawButton" width="80" height="80"/>
+        <image name="resetButton" width="80" height="80"/>
+    </resources>
 </document>

@@ -11,18 +11,15 @@ import SceneKit
 class ViewController: UIViewController, ARSCNViewDelegate {
     
     @IBOutlet weak var draw: UIButton!
-    
     @IBOutlet weak var arView: ARSCNView!
-    
     @IBOutlet weak var hiddenButton: UIButton!
     
-    //    IBOutlet-reference to storyboard/ IBAction- reference to an action
+    // IBOutlet-reference to storyboard/ IBAction- reference to an action
     
     let configuration = ARWorldTrackingConfiguration()
-//    let for values that do not change/ var for values that do change
+    //  let for values that do not change/ var for values that do change
     var colorPicker = UIColor.black
-    
-    var showHiddenButton = false
+    var showResetButton = false
     var canvasNode = SCNNode()
     
     override func viewDidLoad() {
@@ -37,12 +34,12 @@ class ViewController: UIViewController, ARSCNViewDelegate {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        // Dispose of any resources that can be recreated
     }
     
     func renderer(_ renderer: SCNSceneRenderer, willRenderScene scene: SCNScene, atTime time: TimeInterval) {
-        guard let pointView = arView.pointOfView else {return}
-        let transform = pointView.transform
+        guard let cameraPoint = arView.pointOfView else {return}
+        let transform = cameraPoint.transform
         let cameraOrigin = SCNVector3(-transform.m31,-transform.m32,-transform.m33)
         let translation = SCNVector3(transform.m41, transform.m42, transform.m43)
         let cameraRelativePosition = cameraOrigin + translation
@@ -54,19 +51,18 @@ class ViewController: UIViewController, ARSCNViewDelegate {
                 sphereNode.position = cameraRelativePosition
                 sphereNode.geometry?.firstMaterial?.diffuse.contents = self.colorPicker
                
-                if self.showHiddenButton == false {
+                if self.showResetButton == false {
                     self.buttonIsVisible()
                 }
                 
                 self.canvasNode.addChildNode(sphereNode)
 //                self.arView.scene.rootNode.addChildNode(sphereNode)
-                print("draw button is being pressed")
             }
         }
     }
     
     func buttonIsVisible() {
-        self.showHiddenButton = true
+        self.showResetButton = true
         hiddenButton.isHidden = false
     }
     
@@ -76,7 +72,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
            node.removeFromParentNode()
         }
         hiddenButton.isHidden = true
-        self.showHiddenButton = false
+        self.showResetButton = false
     }
     
     @IBAction func red(_ sender: Any) {
@@ -107,19 +103,4 @@ func +(left: SCNVector3, right: SCNVector3) -> SCNVector3 {
 
 //        translation is location translationally
 //        cameraOrigin is the initial orientation of the camera
-
-//            else {
-//
-//                let pointer = SCNNode(geometry: SCNBox(width: 0.01, height: 0.01, length: 0.01, chamferRadius: 0.01/2))
-//                pointer.name = "center"
-//                pointer.position = cameraRelativePosition
-//
-//                self.arView.scene.rootNode.enumerateChildNodes({ (node, _) in
-//                    if node.name == "center" {
-//                        node.removeFromParentNode()
-//                    }
-//                })
-//                self.arView.scene.rootNode.addChildNode(pointer)
-//                pointer.geometry?.firstMaterial?.diffuse.contents = String("X")
-//            }
 
