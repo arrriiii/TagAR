@@ -10,20 +10,48 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--LaunchScreen.storyboard-->
         <scene sceneID="EHf-IW-A2E">
             <objects>
-                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                <viewController title="LaunchScreen.storyboard" id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Powered by Bombing Science" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jKm-1l-nB5">
+                                <rect key="frame" x="80" y="627" width="215" height="20.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="extinguisher" translatesAutoresizingMaskIntoConstraints="NO" id="0ef-TY-TVs">
+                                <rect key="frame" x="163" y="570.5" width="48" height="48"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to TaggAR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Elc-8H-UHe">
+                                <rect key="frame" x="47" y="314" width="280" height="39"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jKm-1l-nB5" secondAttribute="bottom" constant="20" id="2sm-lw-ETS"/>
+                            <constraint firstItem="jKm-1l-nB5" firstAttribute="top" secondItem="0ef-TY-TVs" secondAttribute="bottom" constant="8.5" id="4cP-Cy-DqZ"/>
+                            <constraint firstItem="0ef-TY-TVs" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="C9H-O0-kLE"/>
+                            <constraint firstItem="jKm-1l-nB5" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ReQ-ka-7cc"/>
+                            <constraint firstItem="Elc-8H-UHe" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="duu-em-0g8"/>
+                            <constraint firstItem="Elc-8H-UHe" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="zSY-hK-iCS"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="extinguisher" width="48" height="48"/>
+    </resources>
 </document>

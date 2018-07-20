@@ -6,6 +6,7 @@
 
 import UIKit
 import ARKit
+import MapKit
 import SceneKit
 
 class ViewController: UIViewController, ARSCNViewDelegate {
@@ -13,6 +14,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     @IBOutlet weak var draw: UIButton!
     @IBOutlet weak var arView: ARSCNView!
     @IBOutlet weak var hiddenButton: UIButton!
+    
+    @IBOutlet weak var mapView: MKMapView!
     
     // IBOutlet-reference to storyboard/ IBAction- reference to an action
     
