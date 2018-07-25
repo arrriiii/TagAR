@@ -156,11 +156,22 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     
     
     @IBAction func reset(_ sender: Any) {
+        
+        let alert = UIAlertController(title: "Delete All", message: "Are you sure you want to delete all?", preferredStyle: .alert)
+        let deleteAction = UIAlertAction(title: "Delete All", style: .default, handler: {(UIAlertAction) in
+        self.hiddenButton.isHidden = true
+        self.showResetButton = false
         self.canvasNode.enumerateChildNodes { (node, _) in
            node.removeFromParentNode()
-        }
-        hiddenButton.isHidden = true
-        self.showResetButton = false
+            }
+        })
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: {(UIAlertAction) in
+            NSLog("Cancel Pressed")
+        })
+        
+        alert.addAction(deleteAction)
+        alert.addAction(cancelAction)
+        present(alert, animated: true, completion: nil)
     }
     
     
