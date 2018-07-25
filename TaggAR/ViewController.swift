@@ -15,12 +15,9 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     @IBOutlet weak var arView: ARSCNView!
     @IBOutlet weak var hiddenButton: UIButton!
     
-    @IBOutlet weak var mapView: MKMapView!
-    
     // IBOutlet-reference to storyboard/ IBAction- reference to an action
     
     let configuration = ARWorldTrackingConfiguration()
-    //  let for values that do not change/ var for values that do change
     var colorPicker = UIColor.black
     var showResetButton = false
     var canvasNode = SCNNode()
@@ -28,7 +25,6 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.arView.debugOptions = [ARSCNDebugOptions.showFeaturePoints, ARSCNDebugOptions.showWorldOrigin]
-        self.arView.showsStatistics = true
         self.arView.session.run(configuration)
         self.arView.delegate = self
         self.arView.isUserInteractionEnabled = true
