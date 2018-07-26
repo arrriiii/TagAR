@@ -31,9 +31,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     var blackButtonLocation : CGPoint!
     var greenButtonLocation : CGPoint!
     var blueButtonLocation : CGPoint!
-    
-    
-    
+
     // IBOutlet-reference to storyboard/ IBAction- reference to an action
     
     let configuration = ARWorldTrackingConfiguration()
@@ -71,7 +69,19 @@ class ViewController: UIViewController, ARSCNViewDelegate {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated
+    }
+    
+    func buttonIsVisible() {
+        self.showResetButton = true
+        hiddenButton.isHidden = false
+    }
+    
+    func toggleButton(button: UIButton, onImage: UIImage, offImage: UIImage) {
+        if button.currentImage == offImage {
+            button.setImage(onImage, for: .normal)
+        } else {
+            button.setImage(offImage, for: .normal)
+        }
     }
     
     func renderer(_ renderer: SCNSceneRenderer, willRenderScene scene: SCNScene, atTime time: TimeInterval) {
@@ -91,18 +101,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
                 if self.showResetButton == false {
                     self.buttonIsVisible()
                 }
-                
                 self.canvasNode.addChildNode(sphereNode)
-//                self.arView.scene.rootNode.addChildNode(sphereNode)
             }
-        }
-    }
-    
-    func toggleButton(button: UIButton, onImage: UIImage, offImage: UIImage) {
-        if button.currentImage == offImage {
-            button.setImage(onImage, for: .normal)
-        } else {
-            button.setImage(offImage, for: .normal)
         }
     }
     
@@ -147,11 +147,6 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             
         }
         toggleButton(button: sender, onImage: #imageLiteral(resourceName: "more_on"), offImage: #imageLiteral(resourceName: "more_off"))
-    }
-    
-    func buttonIsVisible() {
-        self.showResetButton = true
-        hiddenButton.isHidden = false
     }
     
     
