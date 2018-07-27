@@ -63,7 +63,6 @@ In order to use the TagAR app, you'll need to download the latest version of Xco
 9. Build the App by pressing the play button on the top of the project folder
 
 > During the sideloading steps, at various times, you may see a popup that will request your password for Keychain. It's essential that you enter your password and click "Always Allow". This pop up might show up more than once, usually around 3-4 times. You must click "Always Allow" every single time. If at any point in this process you are denied permission, you'll get an error that says `swift sdtlib tool error` and you'll have to troubleshoot using these steps listed [HERE](https://stackoverflow.com/questions/41205250/swift-sdtlib-tool-error-task-failed-with-exit-code-1)
-
 > First time sideloading the app, may require your permissions on your device. To enable this, go to your device settings under General, select Device Management and authorize the Developer Apple ID. Stop and rebuild the app from xcode.
   
   
