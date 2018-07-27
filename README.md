@@ -31,8 +31,8 @@ In order to use the TagAR app, you'll need to download the latest version of Xco
 
 * macOS 10.12.6 or above (Sierra)
 * Connection cable for your device to your computer
-* Apple Developer Account
-_You can obtain a developer licence from Apple for $99 per year or you can register with your Apple ID for the free account. Note that the free account is limited to 10 apps per week, so unless you plan building more than 10 apps/week or releasing your app to the App Store, then you should be fine with the free account._
+* Apple Developer Account 
+> You can obtain a developer licence from Apple for $99 per year or you can register with your Apple ID for the free account. Note that the free account is limited to 10 apps per week, so unless you plan building more than 10 apps/week or releasing your app to the App Store, then you should be fine with the free account.
 
 
 ### Tips Before Running the App ###
