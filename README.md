@@ -1,8 +1,4 @@
-# TagAR
-
-The source code of your project on GitHub, with:
-Clear documentation on how to setup/install your project
-Any third-party dependencies or configuration required
+# TagAR 
 
 ## Trello Board ##
 
