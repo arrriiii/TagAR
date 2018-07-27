@@ -19,28 +19,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Powered by Bombing Science" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jKm-1l-nB5">
-                                <rect key="frame" x="80" y="627" width="215" height="20.5"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="106" y="632" width="164.5" height="15.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="illusiontri" translatesAutoresizingMaskIntoConstraints="NO" id="0ef-TY-TVs">
-                                <rect key="frame" x="144" y="550" width="88" height="68"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TagAR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Elc-8H-UHe">
-                                <rect key="frame" x="142.5" y="314" width="89" height="39"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tagAR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Elc-8H-UHe">
+                                <rect key="frame" x="145.5" y="314" width="83.5" height="39"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="33"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fire" translatesAutoresizingMaskIntoConstraints="NO" id="SmX-Ko-6Ba">
+                                <rect key="frame" x="176" y="600" width="24" height="24"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jKm-1l-nB5" secondAttribute="bottom" constant="20" id="2sm-lw-ETS"/>
-                            <constraint firstItem="jKm-1l-nB5" firstAttribute="top" secondItem="0ef-TY-TVs" secondAttribute="bottom" constant="8.5" id="4cP-Cy-DqZ"/>
-                            <constraint firstItem="0ef-TY-TVs" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="C9H-O0-kLE"/>
+                            <constraint firstItem="SmX-Ko-6Ba" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="F4e-Ll-k3Y"/>
                             <constraint firstItem="jKm-1l-nB5" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ReQ-ka-7cc"/>
                             <constraint firstItem="Elc-8H-UHe" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="duu-em-0g8"/>
+                            <constraint firstItem="jKm-1l-nB5" firstAttribute="top" secondItem="SmX-Ko-6Ba" secondAttribute="bottom" constant="8" id="jzA-B2-nEg"/>
                             <constraint firstItem="Elc-8H-UHe" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="zSY-hK-iCS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -52,6 +52,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="illusiontri" width="87" height="87"/>
+        <image name="fire" width="24" height="24"/>
     </resources>
 </document>
