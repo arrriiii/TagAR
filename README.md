@@ -2,15 +2,25 @@
 
 ## Trello Board ##
 
-[Trello Board Link](https://trello.com/b/2CE8lUVi/capstone-project)
+[Trello Board](https://trello.com/b/2CE8lUVi/capstone-project)
 
 ## Product Plan ##
 
-[Product Plan Link](https://gist.github.com/Ari-1/83cdd076125a5daf274bfbcb8a480f71)
+[Product Plan](https://gist.github.com/Ari-1/83cdd076125a5daf274bfbcb8a480f71)
+
+## Tips Before Running the App ##
+
+1. If you're having trouble running the app with ARkit, Try:
+  * Cleaning the project (command+shift+k)
+  * Turning computer on and off
+2. If that doesn't work, the Xcode installation may be corrupt, in which case,
+  * Uninstall and reinstall Xcode (not the beta version, install the release version)
+3. If a white screen shows up when you run the app,
+  * Your device is not compatible with ARkit. Please see the list of supported devices above.
 
 ## Installation ##
 
-In order to use the TagAR app, you'll need to download the latest version of Xcode (9.0 or above), and a iOS device with A9 chip or higher.PLEASE NOTE: ARKit apps do not run on simulators! You must run your code on a physical device. The list of technologies to run the app on your computer below.
+In order to use the TagAR app, you'll need to download the latest version of Xcode (9.0 or above), and a iOS device with A9 chip or higher. PLEASE NOTE: ARKit apps do not run on simulators! You must run your code on a physical device. The list of technologies to run the app on your computer below.
 
 * Xcode 9.0 or above  
 >Xcode is an Integrated Development Environment (IDE) developed by Apple. You can download the latest version through the Mac App store. By default the App Store is in the Dock. You can also find it in your Launchpad.
@@ -29,17 +39,6 @@ In order to use the TagAR app, you'll need to download the latest version of Xco
 * Connection cable for your device to your computer
 * Apple Developer Account 
 > You can obtain a developer licence from Apple for $99 per year or you can register with your Apple ID for the free account. Note that the free account is limited to 10 apps per week, so unless you plan building more than 10 apps/week or releasing your app to the App Store, then you should be fine with the free account.
-
-
-### Tips Before Running the App ###
-
-1. If you're having trouble running the app with ARkit, Try:
-  * Cleaning the project (command+shift+k)
-  * Turning computer on and off
-2. If that doesn't work, the Xcode installation may be corrupt, in which case,
-  * Uninstall and reinstall Xcode (not the beta version, install the release version)
-3. If a white screen shows up when you run the app,
-  * Your device is not compatible with ARkit. Please see the list of supported devices above.
   
 ## SetUp ##
 
