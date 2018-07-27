@@ -23,6 +23,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     @IBOutlet weak var greenColor: UIButton!
     @IBOutlet weak var blueColor: UIButton!
     @IBOutlet weak var more: UIButton!
+    @IBOutlet weak var orangeColor: UIButton!
     
     var redButtonLocation : CGPoint!
     var whiteButtonLocation : CGPoint!
@@ -31,6 +32,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     var blackButtonLocation : CGPoint!
     var greenButtonLocation : CGPoint!
     var blueButtonLocation : CGPoint!
+    var orangeButtonLocation : CGPoint!
 
     // IBOutlet-reference to storyboard/ IBAction- reference to an action
     
@@ -41,7 +43,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.arView.debugOptions = [ARSCNDebugOptions.showFeaturePoints, ARSCNDebugOptions.showWorldOrigin]
+        self.arView.debugOptions = []
         self.arView.session.run(configuration)
         self.arView.delegate = self
         self.arView.isUserInteractionEnabled = true
@@ -55,6 +57,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         blackButtonLocation = blackColor.center
         greenButtonLocation = greenColor.center
         blueButtonLocation = blueColor.center
+        orangeButtonLocation = orangeColor.center
         
         
         redColor.center = more.center
@@ -64,6 +67,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         yellowColor.center = more.center
         greenColor.center = more.center
         blueColor.center = more.center
+        orangeColor.center = more.center
         
     }
 
@@ -117,6 +121,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
                 self.yellowColor.alpha = 1
                 self.greenColor.alpha = 1
                 self.blueColor.alpha = 1
+                self.orangeColor.alpha = 1
                 
                 self.redColor.center = self.redButtonLocation
                 self.whiteColor.center = self.whiteButtonLocation
@@ -125,6 +130,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
                 self.yellowColor.center = self.yellowButtonLocation
                 self.greenColor.center = self.greenButtonLocation
                 self.blueColor.center = self.blueButtonLocation
+                self.orangeColor.center = self.orangeButtonLocation
             })
         } else {
             UIView.animate(withDuration: 0.3, animations: {
@@ -135,6 +141,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
                 self.yellowColor.alpha = 0
                 self.greenColor.alpha = 0
                 self.blueColor.alpha = 0
+                self.orangeColor.alpha = 0
                 
                 self.redColor.center = self.more.center
                 self.whiteColor.center = self.more.center
@@ -143,10 +150,20 @@ class ViewController: UIViewController, ARSCNViewDelegate {
                 self.yellowColor.center = self.more.center
                 self.greenColor.center = self.more.center
                 self.blueColor.center = self.more.center
+                self.orangeColor.center = self.more.center
             })
             
         }
         toggleButton(button: sender, onImage: #imageLiteral(resourceName: "more_on"), offImage: #imageLiteral(resourceName: "more_off"))
+    }
+    
+    
+    @IBAction func cameraOrigin(_ sender: UIButton) {
+        if self.arView.debugOptions == [] {
+            self.arView.debugOptions = [ARSCNDebugOptions.showFeaturePoints, ARSCNDebugOptions.showWorldOrigin]
+        } else {
+            self.arView.debugOptions = []
+        }
     }
     
     
@@ -196,6 +213,9 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     
     @IBAction func yellow(_ sender: Any) {
         self.colorPicker = UIColor.yellow
+    }
+    @IBAction func pink(_ sender: Any) {
+        self.colorPicker = UIColor.orange
     }
     
 }
