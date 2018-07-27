@@ -32,7 +32,7 @@ In order to use the TagAR app, you'll need to download the latest version of Xco
 * macOS 10.12.6 or above (Sierra)
 * Connection cable for your device to your computer
 * Apple Developer Account
-> You can obtain a developer licence from Apple for $99 per year or you can register with your Apple ID for the free account. Note that the free account is limited to 10 apps per week, so unless you plan building more than 10 apps/week or releasing your app to the App Store, then you should be fine with the free account.
+_You can obtain a developer licence from Apple for $99 per year or you can register with your Apple ID for the free account. Note that the free account is limited to 10 apps per week, so unless you plan building more than 10 apps/week or releasing your app to the App Store, then you should be fine with the free account._
 
 
 ### Tips Before Running the App ###
@@ -56,10 +56,10 @@ In order to use the TagAR app, you'll need to download the latest version of Xco
 ### Slideloading the App ###
 5. Make sure you are in the top project folder and select the General tab
 6. Update the Bundle Identifier with your name
-> Mine may say _com.jmft.tagAR_ You'll want to put _com.**your name**.tagAR
+_You'll want to put _com.**your name**.tagAR_
 7. Update the Team with your Developer Apple ID
-> If your Apple ID does not show up, you can add your account with **Add Account** option, this will prompt a sign in window to login in with your Apple ID and password.
-8. Clean the project before running under the Product tab and select Clean. Alternatively, `⇧⌘K` 
+_If your Apple ID does not show up, you can add your account with **Add Account** option, this will prompt a sign in window to login in with your Apple ID and password._
+8. Clean the project before running under the Product tab and select Clean. Alternatively, `⇧⌘k` 
 9. Build the App by pressing the play button on the top of the project folder
 
 > During the sideloading steps, at various times, you may see a popup that will request your password for Keychain. It's essential that you enter your password and click "Always Allow". This pop up might show up more than once, usually around 3-4 times. You must click "Always Allow" every single time. If at any point in this process you are denied permission, you'll get an error that says `swift sdtlib tool error` and you'll have to troubleshoot using these steps listed [HERE](https://stackoverflow.com/questions/41205250/swift-sdtlib-tool-error-task-failed-with-exit-code-1)
