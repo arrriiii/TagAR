@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  TaggAR
+//  TagAR
 //  Copyright © 2018 Ari Herman. All rights reserved.
 
 
